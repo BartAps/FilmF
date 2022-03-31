@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer type="text/javascript" src="movies.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>Assignment: Film finder</title>
+</head>
+<body>
+    <h1 class="title">Favorite Film Finder</h1>
+
+    <nav>
+        <form class="movienavbar">
+            <div class="radio-item"><input name="radio" id="radio1" type="radio"><label for="radio1"> Latest movies (2014 untill now)</label></div>
+            <div class="radio-item"><input name="radio" id="radio2" type="radio"><label for="radio2">Avenger movies</label></div>
+            <div class="radio-item"><input name="radio" id="radio3" type="radio"><label for="radio3">Batman movies</label></div>
+            <div class="radio-item"><input name="radio" id="radio4" type="radio"><label for="radio4">Princess movies</label></div>
+            <div class="radio-item"><input name="radio" id="radio5" type="radio"><label for="radio5">X-men movies</label></div>
+        </form>
+    </nav>
+    
+    <header>
+        <form class="searchForm">
+            <input class="searchItem" type="text" name="search" placeholder="Find your Favorite Film ...">
+        </form>
+    </header>
+
+    <main id="main">
+        <!-- <div class="movie"> -->
+            <div class="movie-info">
+                <ul class="info-movie"></ul>
+            </div>
+
+            <!-- <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div> -->
+        <!-- </div>     -->
+<!-- 
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+    
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+            </div>
+    
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+        
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+           </div>
+        
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+            </div>
+            
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+            </div>
+            
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+            </div>
+            
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div>
+        
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+            </div>
+            
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image">
+            
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <ul>
+
+                </ul>
+            </div>
+            
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate, enim. Beatae incidunt tempore eius iste similique, 
+                culpa sit possimus debitis!
+            </div>
+        </div> -->
+    </main>
+    
+</body>
+</html>
